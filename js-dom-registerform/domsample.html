@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document title</title>
+  </head>
+  <body>
+    <div id="div1" class="aa bb">This is div1</div>
+    <h1 class="t1">This is heading 1</h1>
+    <p id="para1">This is para 1</p>
+    <p class="paraclass">This is para 2</p>
+    <p class="paraclass">This is para 3</p>
+    <div>This the div 1</div>
+    <div id="div2">
+      <h2>Heading</h2>
+      <p id="p2">this is para</p>
+    </div>
+    //select all li and loop through change background red
+    <div id="div3">
+      <ul>
+        <li>Red</li>
+        <li>Green</li>
+      </ul>
+    </div>
+    <script>
+      //create a new li purple and append to the ul
+      let newli = document.createElement('li');
+      newli.textContent = 'purple';
+      document.querySelector('#div3 ul').append(newli);
+
+      //select all li and loop through change background red
+      let mylist = document.querySelectorAll('ul li');
+      mylist.forEach((l) => (l.style.backgroundColor = 'red'));
+
+      //mylist[0].style.backgroundColor = 'red';
+      //select by id
+      let mydiv1 = document.getElementById('div1');
+      mydiv1.textContent = 'New content';
+      mydiv1.style.color = 'green';
+      //mydiv1.style.backgroundColor = 'grey';
+      //mydiv1.setAttribute('class', 'reddiv');
+      mydiv1.classList.add('reddiv');
+      //console.log(mydiv1);
+      //mydiv1.remove();
+
+      //select by tag name
+      let mypara = document.getElementsByTagName('p');
+      mypara[1].style.color = 'green';
+      //console.log(mypara);
+
+      //select by classname
+      let mypara2 = document.getElementsByClassName('paraclass');
+      //console.log(mypara2);
+
+      // queryselector
+      let mypara3 = document.querySelector('#div2 h2');
+      mypara3.style.color = 'red';
+
+      //queryselectorall
+      let mypara4 = document.querySelectorAll('p');
+      mypara4[0].innerHTML = 'aaaaaaaaaaaaaaaaaaaaaaaaaa';
+      //console.log(mypara4);
+
+      ///create element
+      let mydiv2 = document.getElementById('div2');
+      let mypara5 = document.getElementById('p2');
+      let maincontent = document.createElement('div');
+      maincontent.id = 'mc';
+      maincontent.textContent = 'This is the main content';
+
+      //mydiv2.prepend(maincontent);
+      mydiv2.insertBefore(maincontent, mypara5);
+      console.log(maincontent);
+    </script>
+  </body>
+</html>
