@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Student List</h1>
+    <div>
+      <ul id="result"></ul>
+    </div>
+    <script>
+      let students = ['nithya', 'adam', 'marie'];
+      students.push('reic', 'aaaa');
+      students[34] = 'alert';
+      //console.log(students[1]);
+      //   for (let i = 0; i < students.length; i++) {
+      //     console.log(students[i]);
+      //   }
+      students.forEach((s) => console.log(s));
+
+      function displayStudent() {
+        let disply = '';
+        students.forEach((s) => {
+          disply += `<li>${s}</li>`;
+        });
+        document.getElementById('result').innerHTML = disply;
+      }
+      displayStudent();
+    </script>
+  </body>
+</html>

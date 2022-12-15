@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Say Hello</h1>
+    <h2 style="color: green" id="result"></h2>
+    <form>
+      Firstname: <input type="text" id="firstname" /> <br />
+      <input type="button" value="Say Hello" onclick="sayHello()" />
+    </form>
+    <script>
+      function sayHello() {
+        let fname = document.getElementById('firstname').value;
+        document.getElementById('result').innerHTML = `Hello ${fname}`;
+      }
+      console.log(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+  font-size: 1.5em;
+  color: black;
+  background: rgb(175, 175, 214);
+  padding: 5%;
+}
+
+.container {
+  padding: 10px;
+  background: rgb(212, 193, 230);
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 150px 1fr 2fr;
+  grid-template-rows: repeat(3, minmax(150px, 2fr));
+}
+.item {
+  color: paleturquoise;
+  padding: 15px;
+  margin: 5px;
+  background: blue;
+}

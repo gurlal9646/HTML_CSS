@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Register form</h1>
+    <form action="process.html" method="get">
+      Name: <input type="text" id="name" name="name" /><br />
+      Email: <input type="email" id="name" name="name" /><br />
+      Gender:
+      <input type="radio" id="m" name="gender" value="m" checked /> Male
+      <input type="radio" id="f" name="gender" value="f" /> Female
+      <input type="radio" id="o" name="gender" value="o" /> Other <br />
+
+      Languages:
+      <input type="checkbox" name="lang" value="html" checked /> HTML
+      <input type="checkbox" name="lang" value="css" /> CSS
+      <input type="checkbox" name="lang" value="js" /> JavaScript <br />
+
+      Country:
+      <select name="country">
+        <option value=""></option>
+        <option value="ca">Canada</option>
+        <option value="us">USA</option>
+        <option value="mx" selected>Mexico</option>
+      </select>
+      <br />
+      Comment:
+      <textarea cols="40" rows="5"></textarea> <br />
+
+      <input type="submit" value="Register" name="btnSubmit" />
+      <input type="reset" name="resetform" value="Reset" />
+    </form>
+  </body>
+</html>

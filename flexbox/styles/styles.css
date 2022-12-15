@@ -1,0 +1,35 @@
+body {
+  font-size: 1.5em;
+  color: black;
+  background: rgb(175, 175, 214);
+  padding: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 10px;
+  background: rgb(212, 193, 230);
+  margin: 45px auto;
+  display: flex;
+  height: 200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  color: paleturquoise;
+  padding: 15px;
+  margin: 5px;
+  background: blue;
+}
+
+.item3 {
+  order: 3;
+  /* flex-grow: 4; */
+}
+
+.item1 {
+  align-self: flex-start;
+}
