@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      let person = {
+        name: 'Marie',
+        age: 24,
+        email: 'marie@humber.ca',
+        hobbies: ['reading', 'swimming'],
+        address: {
+          city: 'Toronto',
+          country: 'Canada',
+        },
+        displayAge: function () {
+          return this.age;
+        },
+      };
+
+      console.log(person.name);
+      console.log(person.hobbies[1]);
+      console.log(person.address.country);
+      console.log(person.displayAge());
+
+      let students = [
+        {
+          name: 'Marie',
+          age: 24,
+          email: 'marie@humber.ca',
+          hobbies: ['reading', 'swimming'],
+          address: {
+            city: 'Toronto',
+            country: 'Canada',
+          },
+        },
+        {
+          name: 'Marie2',
+          age: 24,
+          email: 'marie@humber.ca',
+          hobbies: ['reading', 'swimming'],
+          address: {
+            city: 'Toronto',
+            country: 'Canada',
+          },
+        },
+        {
+          name: 'Marie3',
+          age: 24,
+          email: 'marie@humber.ca',
+          hobbies: ['reading', 'swimming'],
+          address: {
+            city: 'Toronto',
+            country: 'Canada',
+          },
+        },
+        {
+          name: 'Marie4',
+          age: 24,
+          email: 'marie@humber.ca',
+          hobbies: ['reading', 'swimming'],
+          address: {
+            city: 'Toronto',
+            country: 'Canada',
+          },
+        },
+      ];
+
+      let display = '<ul>';
+      for (let s of students) {
+        display += `<li>${s.name} - ${s.email}</li>`;
+      }
+      display += '</ul>';
+
+      document.querySelector('#result').innerHTML = display;
+
+      //array of product object (id, name, price, description)
+      //display all the products
+    </script>
+  </body>
+</html>
